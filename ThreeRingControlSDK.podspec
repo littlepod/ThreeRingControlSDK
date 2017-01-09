@@ -78,7 +78,7 @@ s.platform     =  :ios, "10.0"
 #  Supports git, hg, bzr, svn and HTTP.
 #
 #s.source       = { :path => '.' }
-s.source        = { :git => "https://github.com/littlepod/ThreeRingControlSDK", :tag => "1.0.0" }
+s.source        = { :git => "https://github.com/littlepod/ThreeRingControlSDK", :tag => "1.0.1" }
 
 #s.source       = { :git => "http://EXAMPLE/ThreeRingControlSDK.git", :tag => "#{s.version}" }
 
