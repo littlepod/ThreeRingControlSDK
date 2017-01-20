@@ -1,0 +1,98 @@
+temporary  links and resources for pod tryout
+
+
+
+links - 10th Jan 2017
+
+https://github.com/littlepod/DemoSmartPod/blob/master/SmartViewSDK-iOS.podspec
+
+https://blog.autsoft.hu/creating-a-private-cocoa-pod/
+
+https://www.raywenderlich.com/99386/create-cocoapod-swift
+
+https://www.raywenderlich.com/126365/ios-frameworks-tutorial
+
+https://www.raywenderlich.com/99386/create-cocoapod-swift
+
+https://github.com/CocoaPods/Specs/blob/master/Specs/8/1/2/google-cast-sdk/3.3.0/google-cast-sdk.podspec.json
+
+http://www.xmcgraw.com/how-to-manage-dependencies-with-cocoapods/
+
+
+https://cocoapods.org/pods/google-cast-sdk
+
+
+
+For binary framework as pod
+
+http://markspanbroek.github.io/2016/04/14/binary-cocoapods.html
+
+
+https://github.com/CocoaPods/CocoaPods/issues/5055
+
+ am looking into setting up a private repo that allows distributing binary .framework files (so no source code) via Cocoapods.
+
+https://eladnava.com/publish-a-universal-binary-ios-framework-in-swift-using-cocoapods/
+
+*****
+http://www.telerik.com/blogs/how-to-use-a-third-party-framework-in-a-private-cocoapod
+
+clean in case unable to find
+
+Could be used as for documentation — well written
+http://stackoverflow.com/questions/28844013/cocoapods-unable-to-find-a-specification-for-github-framework
+
+check this too….
+Could be used as for documentation — well written
+
+https://code.tutsplus.com/tutorials/managing-private-pods-with-cocoapods--cms-25137
+
+<<—— same problem as now 18th Jan 2017
+
+
+http://stackoverflow.com/questions/35290311/why-is-my-cocoapod-not-downloading-the-source-from-the-specified-url
+
+
+
+https://medium.com/@shahabejaz/create-and-distribute-private-libraries-with-cocoapods-5b6507b57a03#.ia93lyxea
+  <<— allows to create private and public pods
+
+https://eladnava.com/publish-a-universal-binary-ios-framework-in-swift-using-cocoapods/
+    <<- this helped and works for SDK  *******
+         guide is good to publish pod spec to git repo of cocoa pods
+
+
+jan
+
+https://trunk.cocoapods.org/claims/new
+  <<- to claim and own a pod trunk in cocoa pods
+
+ref: https://github.com/CocoaPods/CocoaPods/issues/2731
+  <<- adv and disadv 
+
+How can i fix this warning: CoreSimulator is attempting to unload a stale CoreSimulatorService job
+
+>> helps to remove error when as listed above
+
+launchctl remove com.apple.CoreSimulator.CoreSimulatorService || true
+
+<< pod clean and update >>>
+
+#!/usr/bin/env bash
+	
+
+	rm -rf "${HOME}/Library/Caches/CocoaPods"
+	rm -rf "`pwd`/Pods/"
+	pod update
+
+To remove pod from project
+
+pod deintegrate and pod clean are two designated commands to remove CocoaPod from your project/repo.
+Here is the complete set of commands:
+
+sudo gem install cocoapods-deintegrate cocoapods-clean
+pod deintegrate
+pod clean
+rm Podfile
+I
+
