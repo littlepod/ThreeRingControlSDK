@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
 #
 
 s.name         = "ThreeRingControlSDK"
-s.version      = "1.0.1"
+s.version      = "1.0.2"
 s.summary      = "A three-ring control like the Activity status bars"
 s.description  = "The three-ring is a completely customizable widget that can be used in any iOS app. It also plays a little victory fanfare."
 
@@ -61,7 +61,7 @@ s.author             = "Om"
 #  If this Pod runs only on iOS or OS X, then specify the platform and
 #  the deployment target. You can optionally include the target after the platform.
 #
-s.platform     =  :ios, "10.0"
+s.platform     =  :ios, "8.0"
 # s.platform     = :ios
 # s.platform     = :ios, "5.0"
 
